@@ -214,3 +214,32 @@ Copiar
 Editar
 pip install -r requirements.txt
 Make sure you have Python 3.x installed, as some libraries might not be compatible with older Python versions.
+
+# MultiDownloader Pro
+
+MultiDownloader Pro is a multi-platform tool for downloading videos and audio from various online platforms. It allows users to download media files in different formats and resolutions.
+
+## Features:
+- Download videos and audio from various platforms.
+- Select video resolution and audio format.
+- Simple graphical user interface built with Tkinter.
+- Option to download video or audio separately.
+
+---
+
+## Installation Guide
+
+### Prerequisites:
+- Python 3.x
+- FFmpeg (for media conversion and processing)
+
+### Installing FFmpeg
+
+#### **On Linux (Ubuntu/Debian)**
+
+1. Update your system:
+
+   ```bash
+   sudo apt update
+   sudo apt upgrade
+
