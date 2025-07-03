@@ -233,7 +233,7 @@ MultiDownloader Pro is a multi-platform tool for downloading videos and audio fr
 - Python 3.x
 - FFmpeg (for media conversion and processing)
 
-### Installing FFmpeg
+  
 
 #### **On Linux (Ubuntu/Debian)**
 
@@ -242,4 +242,14 @@ MultiDownloader Pro is a multi-platform tool for downloading videos and audio fr
    ```bash
    sudo apt update
    sudo apt upgrade
+
+## Dependencies
+2 install dependencies:
+
+   ```bash
+   pip install requirements.txt
+
+
+
+
 
