@@ -235,19 +235,29 @@ MultiDownloader Pro is a multi-platform tool for downloading videos and audio fr
 
   
 
-#### **On Linux (Ubuntu/Debian)**
+#### **On Windows x86 (Windows)**
 
 1. Update your system:
 
    ```bash
-   sudo apt update
-   sudo apt upgrade
+   winget install ffmpeg
+   
 
-## Dependencies
-2 install dependencies:
+## WINDOWS VARIABLE ENVIRONMENT CONFIGURATION
+Right-click This PC or My Computer and choose Properties.
 
-   ```bash
-   pip install requirements.txt
+Click Advanced system settings, then Environment Variables.
+
+In the System Variables section, scroll down and find the Path variable, then click Edit.
+
+Add C:\ffmpeg\bin (or wherever you extracted FFmpeg) to the list of paths.
+
+For example:
+
+text
+Copiar
+Editar
+C:\ffmpeg\bin
 
 
 
