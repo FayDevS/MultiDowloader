@@ -56,3 +56,161 @@ o	Installation: Comes pre-installed with Python.
 8.	sys
 o	Description: A standard Python module that provides access to some variables and functions that interact with the Python interpreter. In this script, it is used to handle system arguments and execution paths.
 o	Installation: Comes pre-installed with Python.
+
+1. Installing FFmpeg on Linux
+Ubuntu/Debian:
+Update your system:
+
+Open a terminal and run:
+
+bash
+Copiar
+Editar
+sudo apt update
+sudo apt upgrade
+Install FFmpeg:
+
+Run the following command to install FFmpeg:
+
+bash
+Copiar
+Editar
+sudo apt install ffmpeg
+Verify the installation:
+
+To check if FFmpeg is installed correctly, run:
+
+bash
+Copiar
+Editar
+ffmpeg -version
+You should see something like this:
+
+pgsql
+Copiar
+Editar
+ffmpeg version 4.x.x-xxxx
+built with gcc 9.x.x (Ubuntu 9.x.x-x)
+configuration: --enable-gpl --enable-libx264 --enable-libx265 ...
+CentOS/RHEL/Fedora:
+Install the EPEL repository:
+
+bash
+Copiar
+Editar
+sudo yum install epel-release
+Install FFmpeg:
+
+For CentOS 7 or earlier:
+
+bash
+Copiar
+Editar
+sudo yum install ffmpeg ffmpeg-devel
+For Fedora (newer versions):
+
+bash
+Copiar
+Editar
+sudo dnf install ffmpeg
+Verify the installation:
+
+bash
+Copiar
+Editar
+ffmpeg -version
+2. Installing FFmpeg on Windows
+Method 1: Using the ZIP file (Recommended)
+Download FFmpeg:
+
+Go to the official FFmpeg website and select Windows.
+
+You can also download FFmpeg directly from gyan.dev, where you can find the latest builds.
+
+Extract the ZIP file:
+
+After downloading the ZIP file, extract it to a folder on your PC, for example: C:\ffmpeg.
+
+Add FFmpeg to your PATH environment variable:
+
+To run FFmpeg from any location in the terminal (CMD), you need to add it to your PATH environment variable.
+
+Right-click on This PC or My Computer, and select Properties.
+
+Then, click Advanced system settings and then Environment Variables.
+
+In the System Variables section, find the Path variable and click Edit.
+
+Add the path to the bin directory inside the FFmpeg folder (e.g., C:\ffmpeg\bin) to the list. Make sure to separate multiple entries with a semicolon ;.
+
+Click OK.
+
+Verify the installation:
+
+Open Command Prompt (CMD) and type:
+
+bash
+Copiar
+Editar
+ffmpeg -version
+If everything is set up correctly, you should see the FFmpeg version information.
+
+3. Installing Python dependencies
+Now, to install the dependencies for your Python project, as mentioned before, create a file called requirements.txt with the following lines:
+
+r
+Copiar
+Editar
+yt-dlp
+Pillow
+browser-cookie3
+Install dependencies:
+
+If you already have Python installed, open a terminal (or CMD on Windows) and navigate to the folder where requirements.txt is located. Then run:
+
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+This will install all the dependencies listed in the file.
+
+Verify the installations:
+
+To ensure the dependencies have been installed correctly, you can run:
+
+bash
+Copiar
+Editar
+pip list
+This will show a list of all installed libraries. You should see yt-dlp, Pillow, and browser-cookie3 among them.
+
+4. Additional Recommendations
+If you run into issues while installing dependencies, it's recommended to use a virtual environment to avoid conflicts with system-wide libraries. Here's how you can create a virtual environment in Python:
+
+Create a virtual environment:
+
+bash
+Copiar
+Editar
+python -m venv myenv
+Activate the virtual environment:
+
+On Windows:
+
+bash
+Copiar
+Editar
+myenv\Scripts\activate
+On Linux/macOS:
+
+bash
+Copiar
+Editar
+source myenv/bin/activate
+Now, install the dependencies in the virtual environment:
+
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+Make sure you have Python 3.x installed, as some libraries might not be compatible with older Python versions.
